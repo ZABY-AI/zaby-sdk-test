@@ -1,0 +1,31 @@
+{
+  "name": "zaby-sdk",
+  "version": "1.0.0",
+  "description": "A TypeScript SDK that returns Hello World",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test dist/test/index.test.js",
+    "pretest": "npm run build",
+    "example": "tsc && node dist/examples/example.js"
+  },
+  "keywords": [
+    "sdk",
+    "typescript",
+    "hello-world"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.4"
+  }
+}
